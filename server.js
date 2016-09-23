@@ -9,6 +9,13 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var article = {
+    'article_one':{
+        
+    },
+    'article-two':{},
+    'article-three':{}
+};
 app.get('/article1', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article_one.html'));
 });
